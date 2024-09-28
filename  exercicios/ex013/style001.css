@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    background-image: url(imagens/wallpaper004.jpg);
+}
+
+.quadrado{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 16px;
+}
+
+#q1{
+    background-color: skyblue;
+}
+
+#q2{
+    background-image: linear-gradient(to bottom, blue -2%, skyblue);
+}
+
+#q3{
+    background-image: url(imagens/pattern001.png);
+}

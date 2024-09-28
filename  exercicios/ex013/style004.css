@@ -1,0 +1,18 @@
+body{
+    background-image: url(imagens/wallpaper002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*Quando você tem uma quantidade de conteúdo muito grande que chega a precisar da barra de rolagem é necessário adicionar outro comando alemdo do background size cover pois ao rolar a página irá sobrar  espaços sem o seu fundo desejado. Para que você consiga rolar sem problemas é necessário fixar essa imagem de fundo que ao rolar não irá se "mexer"*/
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+main{
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    text-align: justify;
+}     

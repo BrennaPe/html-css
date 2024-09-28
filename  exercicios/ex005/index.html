@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito x Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando tag b <br> a tag b tem apenas fins decorativos ao contrario da tag strong que nos trás um significado semantico para o nosso html.</p>
+    <p>Nesta frase temos um <strong>termo em negrito</strong> usando a tag strong <br> Pode-se perceber que ambas parecem visualmente aparentam ser iguais e de fato são, porém para os motores de busca você perde "relevancia" uma vez que a tag não significa nada além de uma mudança visual ao contrário do strong que nos trás um significado semantico de enfase para determinado texto.</p>
+
+    <h2>Itálico x Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag i (não semântico)</p>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag em stands for emphasis (semântico)</p>
+    <br><br><br>
+    <p><mark>Negrito e Itálico são questões de forma e forma nós editamos no CSS. Sentido nós utilizamos no HTML.</mark></p>
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag MARK. O mark é uma marcação de texto assim como fazemos em livros... Ele é como padrão amarelo. Nós não conseguimos alterar a cor dele aqui porque alterar a cor é uma questão de forma e como estamos no ccs a preocupação é apenas fazer sentido (ser semanticamente correto).</p>
+    
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p> <!-- Nós poderíamos colocar as aspas " " por aqui mesmo porém ela não daria um sentido semantico(sentido de citação) para a nossa página. o Q stands for quotation. Se for apenas um aspas normais e não uma citação nós podemos simplesmente utilizar as arpas normais--> 
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Noble, no seu texto HTML para leigos:</p>
+    <blockquote cite="https://www.google.ie/books/edition/HTML_CSS_JavaScript_All_in_One_For_Dummi/m-nIEAAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover"> <!--Não veremos diferença alguma ao colocar o url aqui mas os mecanismos de busca-->
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, hic consequuntur ex at sed inventore laboriosam nemo dolore, laborum iure fugit voluptatem nesciunt cupiditate similique sit animi doloremque quis delectus
+    </blockquote>
+
+</body>
+</html>

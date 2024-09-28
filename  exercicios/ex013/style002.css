@@ -1,0 +1,49 @@
+div.quadro{
+    border: 1px solid black;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url(imagens/wallpaper003.jpg);
+}
+
+#q1{
+    background-position: top left;
+}
+
+#q2{
+    background-position: center left;
+}
+
+#q3{
+    background-position: bottom right;
+}
+
+#q4{
+    background-position: center;
+}
+
+/*#q1{
+    background-position: left;
+}
+
+#q2{
+    background-position: top;
+}
+
+#q3{
+    background-position: right;
+}
+
+#q4{
+    background-position: bottom;
+}*/
+
+#mascote{
+    border: 2px dashed black;
+    height: 400px;
+    background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right bottom;
+    background-color: rgba(250, 235, 215, 0.533);
+}

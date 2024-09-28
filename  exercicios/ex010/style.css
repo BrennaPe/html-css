@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Jersey 10", sans-serif;
+    height: 100vh;
+    background: black;
+    
+}
+
+#container{
+    height: 250px;
+    width: 500px;
+    background-color: #ffffff7a;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.758);
+    text-align: center;
+    color: white;
+    
+}
+
+h1{
+    box-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px black;
+    padding: 16px 0px;
+}
+
+#surpresa{
+    margin-top: 10px;
+}
+
+img{
+    width: 150px;
+}
+
+img:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymaLYxQugG82e6Sp4oxkl2ZvIXvbIjFurNg&s);
+}
+
+

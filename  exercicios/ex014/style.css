@@ -1,0 +1,43 @@
+#container{
+    width: 600px;
+    height: 450px;
+    background-color: blanchedalmond;
+    background-image: url(imagens/target001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+#contido{
+    background-color: rgb(255, 210, 143);
+    width: 250px;
+    height: 170px;
+    background-image: url(imagens/target001.png);
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#container2{
+    width: 600px;
+    height: 450px;
+    background-color: rgb(205, 150, 67);
+    background-image: url(imagens/target001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#contido2{
+    background-color: rgba(122, 82, 21);
+    width: 250px;
+    height: 170px;
+    background-image: url(imagens/target001.png);
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

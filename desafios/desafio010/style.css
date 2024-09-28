@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+/*----------------------HEADER--------------*/
+
+header{
+    background: rgb(103, 198, 128);
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 24px;
+}
+
+header p{
+    font-family: "Roboto", sans-serif;
+    padding: 16px 0px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px #00000049;
+    font-weight: 900;
+
+}
+
+/*----------------------Main--------------*/
+
+body{
+    background: rgb(62, 131, 80);
+}
+
+
+#conteudo{
+    width: 70%;
+    background: white;
+    margin: auto;
+    padding: 24px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+#conteudo img{
+    max-width: 100%;
+}
+
+#conteudo p{
+    font-family: "Roboto", sans-serif;
+    text-indent: 16px;
+    padding: 16px 0px;
+}
+
+#conteudo h1{
+    color: rgb(62, 131, 80);
+}
+
+#conteudo h2{
+    color: rgba(255, 255, 255, 0.903);
+    background: rgba(62, 131, 80, 0.855);
+    padding-left: 16px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+#bug{
+    width: 50%;
+}
+
+#learn-more{
+    background: rgba(103, 198, 128, 0.532);
+    width: 100%;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+#learn-more li{
+    list-style: none;
+    text-align: center;
+}

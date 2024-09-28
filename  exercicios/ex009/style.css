@@ -1,0 +1,45 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    padding: 24px;
+    background-color: #BF5D24;
+}
+
+#principal{
+    padding-bottom: 20px;
+    color: #F2A35E;
+}
+
+.secundario{
+    padding: 16px 0px;
+    color: #D99066;
+}
+
+
+
+h2{
+    padding: 20px 0px;
+    color: #bd928f;
+}
+
+.highlight{
+    text-shadow: 2px 2px 2px #34242298; ;
+}
+
+h1.texto{
+    color: #BF9C99;
+}
+
+h1.formato{
+ color: #7a5e5b;;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}

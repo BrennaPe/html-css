@@ -1,0 +1,211 @@
+/* font-family: "Bebas Neue", sans-serif;*/
+
+
+@font-face {
+    font-family: 'android';
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+} /*Fonta face serve para importar fontes baixadas*/
+
+:root{
+--cor1: #99f7be;
+--cor2: #5beaa7;
+--cor3: #00BB4B;
+--cor4: #2C583E;
+--cor5: #051B0D;
+--fonte-padrão: arial, verdana, helvetica;
+--fonte-destaque: "Bebas Neue", system-ui;
+--fonte-android: 'android', arial;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrão);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    min-height: 150px;
+    color: white;
+    font-family: var(--fonte-padrão);
+    padding-top: 36px;
+    text-align: center;
+
+}
+
+header h1{
+font-family: var(--fonte-destaque);
+color: white;
+text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.398);
+}
+
+header p{
+    font-family: var(--fonte-padrão);
+    margin-top: 16px;
+    padding: 0px 20px;
+    
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 16px;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px;
+    height: 24px;
+    transition: background .2s;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.299);
+    font-weight: 600;
+
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 24px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 26px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    text-align: justify;
+
+    
+}
+
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor3), white );
+    padding: 5px;
+    text-indent: 5px;
+}
+
+main p{
+    line-height: 2em;
+    text-indent: 20px;
+    padding: 15px 0px;
+}
+
+main strong{
+    color: var(--cor5);
+    font-size: 1.1em;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    padding: 5px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img{
+    width: 100%;
+}
+
+main img#bug-droid{
+    max-width: 350px;
+    display: block; /* Como uma imagem possui como essência o display inline e não o block, nós não conseguimos centralizar a imagem com o margin auto sem modificar o seu display*/
+    margin: auto;
+}
+
+/*COMO CENTRALIZAR UM VÍDEO EM SUA PÁGINA*/
+
+.video{
+    background-color: var(--cor4);
+    margin: 0px -24px 20px -24px;
+    padding: 24px;
+    position: relative;
+    padding-bottom: 50%;
+
+}
+
+.video iframe{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+/*PARA TER O VÍDEO COM O TAMANHO INTEIRO DA SUA DIV*/
+/*.video iframe{
+    position: absolute;
+    left: -.009%;
+    top: -.009%;
+    width: 100%;
+    height: 100%;
+}*/
+
+aside{
+    border-radius: 10px;
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.362);
+    padding: 20px 20px 0px 20px ;
+}
+
+aside ul{
+    column-count: 2;
+    list-style-type: '\2714\00A0\00A0'; /*esse código para este emoj foi pego no site emojpedia e deve-se lembrar que ele não é compatível com todos os navegadores e como o emoj ficou muito grudado com a linha a maneira que temos de dar espaço é utilizando o código de espaço sem quebra que é o \00A0 */
+    padding-left: 24px;
+    padding-bottom: 24px;
+
+}
+
+aside h3{
+    margin: -20px -20px 0px -20px;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor4);
+    color: white;
+}
+
+footer{
+    font-size: .8em;
+    padding: 16px;
+    text-align: center;
+    background: var(--cor4);
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+.link::after{
+    content: '\00A0\1F517';
+    /*no html criou-se uma class para facilitar a adição do emoj de link após o texto linkado e os dois pontos significa pseudo elento e nest pseudo elemento foi escolhido o after ou seja after o conteudo façã tal coisa*/
+}

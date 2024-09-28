@@ -1,0 +1,7 @@
+body{
+    background-image: url(imagens/wallpaper002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center; /* Este background position ira definir a ancoragem da nossa imagem, ou seja, quando aumentarmos ou diminuirmos a nossa página o ponto fixo do background será o que você deixou definido aqui */
+}

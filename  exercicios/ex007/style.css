@@ -1,0 +1,28 @@
+div{
+    border: 5px solid red;
+    margin-bottom: 20px;
+}
+
+p{
+    border: 2px solid blue;
+}
+
+span{
+    border: 3px solid green;
+}
+
+ul{
+    border: 2px solid black;
+}
+
+ul li{
+    border: 1px solid orange;
+}
+
+h1{
+    border: 1px solid greenyellow;
+}
+
+#div2{
+    padding: 20px;
+}
