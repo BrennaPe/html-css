@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #012340, #025939, #027333, #03A63C);
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} /*	•	height: 100vh;: Garante que o corpo (body) ocupe toda a altura da janela do navegador.
+•	display: flex;: Configura o body como um container flexível.
+•	justify-content: center;: Alinha o #container1 horizontalmente no centro.
+•	align-items: center;: Alinha o #container1 verticalmente no centro.*/
+
+#container1{
+    background-color: rgba(255, 255, 255, 0.349);
+    width: 500px;
+    height: 180px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.303);
+    box-shadow: 10px 10px 10px #01234072;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+}
+
+#options{
+    margin-top: 20px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.359);
+    border: 2px solid rgba(255, 255, 255, 0.303);
+}
+
+a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: white;
+}
