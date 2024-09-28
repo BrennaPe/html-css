@@ -3,4 +3,5 @@
 
 <a href="https://brennape.github.io/html-css/desafios/desafio-freestyle/" target="_blank">Desafio Freestyle 01</a> <br>
 <a href="https://brennape.github.io/html-css/desafios/desafio-freestyle2/" target="_blank">Desafio Freestyle 02</a> <br>
-<a href="https://brennape.github.io/html-css/desafios/desafio-freestyle3/" target="_blank">Desafio Freestyle 03</a>
+<a href="https://brennape.github.io/html-css/desafios/desafio-freestyle3/" target="_blank">Desafio Freestyle 03</a> <br>
+<a href="https://brennape.github.io/html-css/desafios/desafio-freestyle4/" target="_blank">Desafio Freestyle 04</a>
