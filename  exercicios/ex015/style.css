@@ -1,0 +1,24 @@
+/* A configuração inicial de uma tabela é sem as linhas de grade. Se você quiser adicionar essas linhas é necessário lembrar que não basta colocar a borda na table, isso só fará que o perímetro da tabela fique com a borda. Para colocar a borda em todas as 'células' é necessário colocar do td*/
+
+/*table{
+    border: 1px solid black;
+} */
+
+table{
+   /* border-collapse: collapse;*/ 
+    border-collapse: separate; /*O valor padrão da borda é o separete ou seja as celulas ficarão com um pequeno gap entre elas. Caso você não queira esse gap é só update a borda para collapse*/
+}
+
+td{
+    border: 1px solid black;
+    width: 300px;
+    padding: 24px;
+}
+
+td:hover{
+    border: 2px solid black;
+}
+
+.linha{
+    background-color: rgb(231, 179, 110);
+}
