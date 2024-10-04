@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    padding: 12px;
+    text-align: center;
+}
+
+.num{
+    text-align: right;
+}
+
+#cab{
+    border: 4px solid grey;
+    background-color: rgba(128, 128, 128, 0.442);
+}
+
+.pos{
+    border-right: 4px solid grey;
+    border-left: 4px solid grey;
+    background-color: rgba(179, 179, 179, 0.442);
+}
+
+#pos{
+    border-bottom: 4px solid grey;
+    border-left: 4px solid grey;
+    border-right: 4px solid grey;
+    background-color: rgba(179, 179, 179, 0.442);
+}
+
+#total{
+    border: 4px solid rgb(10, 138, 23);
+    background-color: rgba(130, 221, 46, 0.442);
+}
