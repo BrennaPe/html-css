@@ -43,3 +43,8 @@ td, th{
     border: 4px solid rgb(10, 138, 23);
     background-color: rgba(130, 221, 46, 0.442);
 }
+
+tbody tr:nth-child(even){ /*No CSS, o seletor :nth-child() é uma pseudo-classe que permite selecionar elementos com base em sua posição dentro de um grupo de elementos irmãos (ou seja, elementos que compartilham o mesmo elemento pai).	•	elemento: O tipo de elemento que você deseja selecionar (por exemplo, div, p, li).
+•	n: Um número, uma palavra-chave, ou uma fórmula que define quais filhos serão selecionados.*/
+    background-color: rgba(130, 221, 46, 0.442);
+}

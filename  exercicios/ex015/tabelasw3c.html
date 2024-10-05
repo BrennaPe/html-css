@@ -15,6 +15,7 @@
      <!--
     ANOTOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION = Título
         THEAD
             TR, TD, TH
         
@@ -26,13 +27,14 @@
       -->
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr id="cab">
-                <th>Position</th>
-                <th>County</th>
-                <th>Population</th>
-                <th>% total</th>
-                <th>Comparable Country</th>
+                <th scope="col">Position</th> 
+                <th>County</th><!-- o scope col nos dis que o dado dessa th é a coluna logo abaixo, se fosse scope row os dados desse 'título' deveria estar ao lado. Um exemplo de th com o dado ao lado é o total-->
+                <th scope="col">Population</th>
+                <th scope="col">% total</th>
+                <th scope="col">Comparable Country</th>
             </tr>
         </thead>
         <tbody>
@@ -69,7 +71,7 @@
         <tfoot>
             <tr>
                 <th id="pos"></th> <!--Perceba que tilizamos no footer o th para colocar informação e não dado-->
-                <th id="total">Total</th>
+                <th id="total" scope="row">Total</th>
                 <td class="num"><strong>243 234 853</strong></td>
                 <td><strong>44,65%</strong></td> <!--Strong é a tag semantica para dar enfase em uma parte especifica de um texto-->
                 <th></th>
