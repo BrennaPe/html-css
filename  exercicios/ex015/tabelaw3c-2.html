@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabelaw3c-2.css">
+</head>
+<body>
+    <h1>Tabela com células mescladas</h1>
+    <!--<table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td colspan="2" >3</td>
+            <td>4</d>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </table>-->
+    <table>
+        <caption>TABELA</caption>
+        <thead>
+            <th scope="col">Frutas</th>
+            <th scope="col">Verduras</th>
+            <th scope="col">Grãos</th>
+            <th scope="col">...</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maçã</td>
+                <td>Alface</td>
+                <td>Arroz</td>
+                <td rowspan="3"> 3 Linhas</td>
+            </tr>
+            <tr>
+                <td>Laranja</td>
+                <td>Beterraba</td>
+                <td>Trigo</td>
+            </tr>
+            <tr>
+                <td colspan="3">3 Colunas</td> <!--Perceba que parece o inverso mas na verdade não é uma vez que você entende que a coluna é determinado por espaços horizontais que você quer mesclar (dado que cado espaço na horizoltal advem de uma coluna). Esta mesma linha de pensamento serve pra justificar a mesclagem rowspan parecer mesclar uma coluna quando na vdd ela esta mesclanos apenas as linhas desta coluna e não a colunas em si-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
