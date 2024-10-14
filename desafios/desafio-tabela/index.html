@@ -11,12 +11,12 @@
         <thead>
             <th scope="col">Grupo</th>
             <th scope="col">Nomes</th>
-            <th scope="col" colspan="3">Filmes</th>
+            <th scope="colgroup" colspan="3">Filmes</th> <!-- Neste caso utilizamos o scope colgroup pois essa coluna resulta em mais três colunas abaixo dela ou seja um grupo de colunas "resultados" em baixo deste mesmo cabeçalho https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-21-aula-11-escopos-de-grupo-2/-->
         </thead>
 
     <tbody>
         <tr class="mulheres">
-            <th scope="row" rowspan="2">Mulheres</th>
+            <th scope="rowgroup" rowspan="2">Mulheres</th>
             <td>Ana Maria</td>
             <td>Alien</td>
             <td>Hannah Montana</td>
@@ -29,7 +29,7 @@
             <td>Vingadores</td>
         </tr>
         <tr class="homens">
-            <th scope="row" rowspan="2">Homens</th>
+            <th scope="rowgroup" rowspan="2">Homens</th>
             <td>João</td>
             <td>Hellboy</td>
             <td>Gladiador</td>
