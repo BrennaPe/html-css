@@ -1,0 +1,26 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.687);
+    color: white;
+    padding: 16px;
+
+}
+
+td{
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+}
+
+.mulheres{
+    background-color: lightpink;
+}
+
+.homens{
+    background-color: lightblue;
+}
