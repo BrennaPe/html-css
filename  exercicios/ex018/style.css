@@ -1,0 +1,78 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    margin-bottom: 24px;
+
+}
+
+main{
+    background-color: rgb(69, 67, 67);
+    height: 100%;
+    width: 100vw;
+}
+
+
+div{
+    border: 1px dashed white;
+    width: 100px;
+    height: 40px;
+}
+
+section{
+    border: 9px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+#teste2{
+    border: 9px solid rgb(91, 143, 12);
+    display: flex;
+    flex-flow: row wrap;
+    align-content:flex-end;
+    height: 200px;
+    margin-bottom: 40px;
+}
+#teste3{
+    border: 9px solid rgb(12, 137, 143);
+    display: flex;
+    flex-flow: row wrap;
+    align-content:center;
+    height: 200px;
+    margin-bottom: 40px;
+}
+#teste4{
+    border: 9px solid rgb(197, 197, 31);
+    display: flex;
+    flex-flow: row wrap;
+    align-content:space-between;
+    height: 200px;
+    margin-bottom: 40px;
+}
+#teste5{
+    border: 9px solid rgb(156, 31, 197);
+    display: flex;
+    flex-flow: row wrap;
+    align-content:space-evenly;
+    height: 200px;
+    margin-bottom: 40px;
+}
+#teste6{
+    border: 9px solid rgb(197, 31, 31);
+    display: flex;
+    flex-flow: row wrap;
+    align-content:space-around;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
