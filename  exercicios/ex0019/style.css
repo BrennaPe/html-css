@@ -1,0 +1,36 @@
+#container{
+    border: 1px solid red;
+    display: flex;
+}
+
+.item{
+    background-color: antiquewhite;
+    padding: 24px 30px;
+    border: 1px solid black;
+    flex-flow: row wrap;
+}
+
+div#i1 {
+    order: 1;
+}
+div#i2{
+    order: 3 ;
+}
+div#i3{
+    order:4 ;
+}
+div#i4{
+    order:0 ;
+}
+div#i5{
+    order: -5;
+}
+div#i6{
+    order: -4;
+}
+div#i7{
+    order:2 ;
+}
+div#i8{
+    order:3 ;
+}
