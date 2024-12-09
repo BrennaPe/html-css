@@ -1,0 +1,44 @@
+
+#container{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: black;
+
+}
+
+.item{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    flex-flow: row wrap;
+    flex-basis: auto;
+}
+
+.item2{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    flex-flow: row wrap;
+    flex-basis: 150px;
+}
+
+
+.item3{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    flex-flow: row wrap;
+}
+
+#i1{
+    flex: 0 4 250px;
+}
+
+#i2{
+    flex: 0 1 250px;
+}
+
+#i3{
+    flex: 0 1 250px;
+} 
+/* no caso deste exemplo nós temos o elemnto A diminuindo quatro vezes mais rápido que os outros uma vez que é aproporção que colocamos em seu flex em comparação aos outros dois itens */
+/* flex: grow + shrink + basis */

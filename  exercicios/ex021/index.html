@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flex basis</h1>
+    <div id="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">conteudo maior</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">conteudo maior ainda que vai ocupar mais espaço</div>
+        <div class="item" id="i5">E</div>
+    </div>
+
+    <div>
+        <h2>flex basis auto</h2>
+        <p>O flex basis auto é o que temos by default. Ele adapta o tamhno da sua caixa de acordo com o tamanho do conteudo que  você tem</p>
+    </div>
+
+    <div id="container">
+        <div class="item2" id="i1">A</div>
+        <div class="item2" id="i2">teste teste teste</div>
+        <div class="item2" id="i3">C</div>
+        <div class="item2" id="i4">teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste</div>
+        <div class="item2" id="i5">E</div>
+    </div>
+
+    <h2>flex basis com tanho definido por px</h2>
+    <p>Se definirmos o tamhno do flex basis com um tamonho específico, todas as caixas terá o tamanho predefinido, neste exemplo, todas as caixas estão com 150px de largura(lembrando que o flex basis no é fixo, ele é uma base|tentativa. ele só da certo os 150px se tivermos espaço no container... otherwise as caixas irão se adaptar ou caso queira travar no 150px basta colocar o flex flow para fazer o wrap porém o seu conteºudo irá 'quebrar' ). (Largura pois é o meu eixo principal e estamos utilizando flex flow row nowrap, ou sej ameu eixo principal esta deitado)  </p>
+    
+
+    <div id="container">
+        <div class="item3" id="i1">A</div>
+        <div class="item3" id="i2">B</div>
+        <div class="item3" id="i3">C</div>
+    </div>
+    <h2>flex grow or shrink</h2>
+    <!--https://www.youtube.com/watch?v=Le_rq-Cz_mo&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=10-->
+</body>
+</html>
