@@ -1,5 +1,18 @@
-body{
+/* body{
     background-color: red;
 }
 
-/* O max width wue colocamos em nosso html nos dix que do 0 até no maximo 600px determinadas mudanças acontecerão, como neste exemplo seria o bg ficar red. Valores acima de 600 como 601 o bg volta a cor padrão. Tudo que eu colocar aqui é apenas para o mobile */
+O max width wue colocamos em nosso html nos dix que do 0 até no maximo 600px determinadas mudanças acontecerão, como neste exemplo seria o bg ficar red. Valores acima de 600 como 601 o bg volta a cor padrão. Tudo que eu colocar aqui é apenas para o mobile */
+
+
+header, header nav{
+    flex-flow: column wrap;
+}
+
+header h1{
+    flex-basis: 30px;
+}
+
+header nav{
+    width: 90vw;
+}

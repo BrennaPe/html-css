@@ -22,13 +22,13 @@ header{
 }
 
 header h1{
-    border: 2px dashed black;
+    /* border: 2px dashed black; */
     flex: 0 0 200px;
     /* nesta configuração flex esramos dizendo que o h1 não vai crescer, não vai encolher e vai ficar com 200px fixos */
 }
 
 header nav{
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     display: flex;
     flex-flow:  row wrap;
 }
