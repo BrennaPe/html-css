@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <p> todos os formulários precisam estar dentro da tag form</p>
+    <form action="cadastro.php"> <!--action a ação vai ser diparada quando alguem clicar no botão de submite -->
+
+        <!--O computador não é uma maquina inteligente que vai saber que o que você colocou como por exemplo na primera tag p (nome|) está corrrelacionada a o espaço (input) logo a frente dele. Você precisa fazer isso colocando uma tag label. Neste label o unico parametro que tamos é o -for- ou seja label para quem. Neste -for- sempre colocaremos o id que está no input ou seja é o id ao qual ela esta se relacionando-->
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Submite"></p>
+    </form>
+</body>
+</html> 
