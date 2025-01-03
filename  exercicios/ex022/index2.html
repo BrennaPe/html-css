@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro2.php" method="post">
+        <p>
+            <label for="iuser">User</label> 
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="10" placeholder="Nome de Usuário"><!-- O name aqui é importante para html php e o id é importante para fazer a relação com o nome (label) e também para o javascript-->
+
+            <!--Perceba que mesmo sem preencher nada você ainda consegue enviar o formulário. Para isso não acontecer é necessário adicionar o atributo required nos seus campos de input-->
+
+            <!--minlength significa que o seu user precisa ter no mínimo 5 letras. Maxlength é  a quantia máxima de letras/digitos. Podemos colocar o atributo placeholder em nossos inputs para colocar uma dica para o usuário. -->
+
+            <!-- Autocomplete é algo muito util que podemos utilizar. Ele serve para facilitar a vida do usuário uma vez que o navegador vai ajudar a preencher os dados pedidos... Se colocarmos o autocomplete na tag form nós só teremos as opções de on ou off porém se colocarmos o autocomplete na tag input desejada nós teremos muitas opões de que tipo de autocomplete você quer (para colocar no input é importante deixar on no form)-->
+
+        </p> <!-- neste caso para criar o form aqui estou usando a tag p mas eu poderia estar utilizando div também-->
+
+        <p>
+            <label for="ipassword">Password</label>
+            <input type="password" name="password" id="ipassword" required minlength="10" placeholder="Min. 10 letras">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>

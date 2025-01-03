@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulário</h1>
+    <form action="cadastro3.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="idata">Dia da prova</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <label for="imonth"> Período Letivo
+            </label>
+            <input type="month" name="month" id="imonth">
+        </p> <!--Não compatível com firefox e safari pc. Sempre confira a compatibilidade das propriedades-->
+        <p>
+            <label for="ihorario">Horário da Prova</label>
+            <input type="time" name="horario" id="ihorario">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" max="10" min="0" placeholder="0 a 10" step="0.5"> <!-- Quando usamos o input  com o type number a nossa caixa de input no site só aceitará entradas com numéricas. Neste caso o minlenght and maxlenght não funcionará uma vez que ele é para letras e não números. Aqui usaremos min e max.  -->
+
+            <!-- A propriedade step serve para colocarmos de quanto em quanto a nota pode variar. É a graduação que a nossa página irá aceitar. Por exemplo se colocarmos step de 0,5 o nosso input passa a aceitar notas como 5,5 diferente de que se não tivessemos colocado o step que só aceitaria números inteiros (ou 5 ou 6)-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+</body>
+</html>

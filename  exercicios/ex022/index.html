@@ -8,10 +8,13 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     <p> todos os formulários precisam estar dentro da tag form</p>
-    <form action="cadastro.php"> <!--action a ação vai ser diparada quando alguem clicar no botão de submite -->
+    <form action="cadastro.php" autocomplete="on" method="get"> <!-- você vai perceber que ao enviar o formulario você consegue ver na url os dados preenchidos aparecendo na url isso acontece pq o método de envio by default é GET. Caso você queira que não apareça o que foi preenchido aparencendo na url vc vai precisar mudar esse metodo na sua form para POST. Lembrando que isso ainda não é um metodo de segurança e sim só não fica alí na cara aparecendo na url os dados preenchidos. Para proteger esses dados é necessário usar https. Se você quiser que o link seja compartilhavel o method que você vai utilizar é o GET, lembrando que esse metodo só aceita até três mil bytes (3k letras) e não pode ser enviado imagens/arquivos e dados sensiveis como senhas, número de cartão de crédito e etc-->
+        
+        
+        <!--action a ação vai ser diparada quando alguem clicar no botão de submite -->
 
         <!--O computador não é uma maquina inteligente que vai saber que o que você colocou como por exemplo na primera tag p (nome|) está corrrelacionada a o espaço (input) logo a frente dele. Você precisa fazer isso colocando uma tag label. Neste label o unico parametro que tamos é o -for- ou seja label para quem. Neste -for- sempre colocaremos o id que está no input ou seja é o id ao qual ela esta se relacionando-->
-        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome" ></p>
         <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Submite"></p>
     </form>
