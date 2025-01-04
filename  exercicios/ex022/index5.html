@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulários</h1>
+    <form action="">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- é muito importante notar que no caso do input TIPO RADIO se você deixar cada input com um 'name' diferente você vai conseguir  selecionar mais de um item... e esse não é o intuito do radio. Para que isso não aconteça é necessário deixar todos os itens com o mesmo 'name' que ao selecionar um ele desmarcará o outro -->
+            <input type="radio" name="sx" id="isxmasc" value="Masc"><label for="isxmasc">Masculino</label>
+            <input type="radio" name="sx" id="isxfem" value="Fem"><label for="isxfem">Feminino</label>
+            <input type="radio" name="sx" id="outro"><label for="outro">Outro</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="basq" id="ibasq"><label for="ibasq">Basquete</label> <br>
+             <!--para que você no celular consiga clicar só no nome invés da checkbox e selecionar (lavel for é igual ao id do input), é preciso relacionar o que esta escrito com o input. Não apensa para isso mas também serve para os mecanismos de busca-->
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label><br>
+
+            <input type="checkbox" name="vol" id="ivol" checked ><label for="ivol">Vôlei</label><br>
+            <!--checked servev para deixar um checkbox já selecionado-->
+            <input type="checkbox" name="skt" id="iskt"><label for="iskt">Skate</label><br>
+
+
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+
+</body>
+</html>
