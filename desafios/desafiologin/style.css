@@ -1,0 +1,178 @@
+*, body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+/* font-family: "Montserrat", serif; 
+  font-family: "Noto Sans JP", serif;
+*/
+
+body{
+    width: 100vw;
+    height: 99vh;
+    background-color: antiquewhite;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    color:  rgba(209, 190, 151, 0.718);
+    max-width: 70%;
+    margin: auto;
+}
+
+#container h1{
+    transition: .5s;
+}
+
+#container h1:hover{
+    color:  rgb(209, 190, 151);
+    text-shadow: 2px 2px 5px  rgb(209, 190, 151);
+}
+
+#container ul{
+    display: flex;
+    /* border: 1px solid green; */
+    list-style: none;
+    align-items: center;
+    gap: 16px;
+}
+
+#container ul li a{
+    text-decoration: none;
+    color: black;
+    color:  rgba(209, 190, 151, 0.718);
+    transition: .5s;
+
+}
+
+#container ul li a:hover{
+    text-decoration: overline underline;
+    text-shadow: 2px 2px 5px  rgb(240, 210, 150);
+
+}
+/* ------------------MAIN-------------------- */
+
+main{
+    max-width: 70%;
+    margin: auto;
+    height: 90%;
+    /* border: 5px solid red; */
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1{
+    color:  rgba(209, 190, 151, 0.845);
+    font-size: 3em;
+    line-height: 1em;
+    transition: .5s;
+    /* border: 5px solid red; */
+    text-align: center;
+
+}
+
+main h1:hover{
+    color:  rgb(209, 190, 151);
+    text-shadow: 2px 2px 8px  rgb(209, 190, 151);
+}
+
+
+fieldset{
+    background-color: rgba(209, 190, 151, 0.718);
+    margin: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#fieldset1:hover{
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.801);
+}
+
+#fieldset2:hover{
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.801);
+}
+
+#fieldset3:hover{
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.801);
+}
+
+
+
+input[type="checkbox"]{
+    accent-color: rgba(0, 0, 0, 0.474);}/*  Newer CSS property for changing checkbox color */
+
+input[type="radio"] {
+    accent-color: rgba(0, 0, 0, 0.474); /* Set the color you want for the radio button */}
+
+select {
+    -webkit-appearance: none;  /* Chrome, Safari, and Opera */
+    -moz-appearance: none;     /* Firefox */
+    appearance: none;          /* Standard syntax */
+    padding-right: 30px;       /* Space for the custom arrow */
+    background-color: rgb(255, 255, 255);   /* Optional: Set background color */
+    border: 1px solid #ccc;    /* Optional: Border for select */
+    background-image: url(img/arrow-down.svg); /* Custom arrow image */
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensure the arrow fits inside the box */
+    background-position: 96% center; /* Position the arrow */
+      }   
+
+input::placeholder {
+    color: #00000074; /* Set the color you want for the placeholder text */
+    /*font-style: italic;  Optional: style for the placeholder text */
+      }
+
+
+
+.txtbox{
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid black;
+}
+
+.txtbox:hover{
+    box-shadow: 2px 2px 8px rgba(209, 190, 151, 0.758);
+    border: 1px solid rgb(209, 190, 151);
+} 
+
+.buttom{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.buttom:hover{
+    border: 1.5px solid black;
+    font-weight: 500;
+}
+
+/* ------------------------FOOTER-------------------- */
+
+footer{
+    color:  rgba(209, 190, 151, 0.489);
+    text-align: center;
+    font-size: .8rem;
+    /* border: 1px solid red; */
+    padding-bottom: 12px;
+}
+
+span:hover{
+    color:  rgb(209, 190, 151);
+    text-shadow: 2px 2px 5px  rgb(209, 190, 151);
+}

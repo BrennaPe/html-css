@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>太特地区</h1>
+        <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div id="container-main">
+            <h1>Join Us!</h1>
+            <form action="#" autocomplete="on" method="post">
+                <fieldset id="fieldset1">
+                    <div>
+                        <p>I want to register with 太特地区 using my</p>
+                        <label for="icontato">Email
+                        </label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" class="txtbox">
+                    </div>
+                    <div>
+                        <label for="iphone">Mobile Number</label>
+                        <input type="tel" name="phone" id="iphone" autocomplete="tel" class="txtbox">
+                    </div>
+                    <div>
+                        <label for="iterms">General Conditions</label>
+                        <input type="checkbox" name="terms" id="agree"><label for="agree">I do agree</label>
+                        <input type="checkbox" name="terms" id="dontagree"><label for="dontagree">I do not agree</label>
+                    </div>
+                </fieldset>
+                <fieldset id="fieldset2">
+                    <div>
+                        <label for="iname">First Name *</label>
+                        <input type="text" name="name" id="iname" required maxlength="15" title="write your first name here" autocomplete="name" class="txtbox">
+                    </div>
+                    <div>
+                        <label for="ilastname">Family Name *</label>
+                        <input type="text" name="lastname" id="ilastname" required title="Write your last name here" autocomplete="family-name" class="txtbox">
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="iman" value="man"><label for="iman">Man</label>
+                        <input type="radio" name="sexo" id="iwoman"><label for="iwoman">Woman</label>
+                        <input type="radio" name="sexo" id="idfk"><label for="idfk">Idfk</label>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <optgroup label="Western Europe">
+                                <option disabled selected>Country</option>
+                                <option value="aut">Austria</option>
+                                <option value="bel">Belgium</option>
+                                <option value="fra">France</option>
+                                <option value="deu">Germany</option>
+                                <option value="lie">Liechtenstein</option>
+                                <option value="lux">Luxembourg</option>
+                                <option value="mco">Monaco</option>
+                                <option value="NDL">Netherlands</option>
+                                <option value="che">Switzerland</option>
+                            </optgroup>
+                            <optgroup label="Eastern Europe ">
+                                <option value="brl">Belarus</option>
+                                <option value="bgr">Bulgaria</option>
+                                <option value="cze">Czech Republic</option>
+                                <option value="hun">Hungary</option>
+                                <option value="mda">Moldova</option>
+                                <option value="pol">Poland</option>
+                                <option value="rou">Romania</option>
+                                <option value="svk">Slovakia</option>
+                                <option value="ukr">Ukraine</option>
+                            </optgroup>
+                        </select>
+                        <div>
+                            <label for="iprofession">Profession</label>
+                            <input type="text" name="profession" id="iprofession" list="professionlist" class="txtbox">
+                            <datalist id="professionlist">
+                                <option value="TP">Train Pusher </option>
+                                <option value="PM">Professional Mourner </option>
+                                <option value="HS">Human Scarecrow</option>
+                                <option value="FSC">Feng Shui Consultant</option>
+                                <option value="PA">Professional Apologizer</option>
+                                <option value="DH">Duck Herder</option>
+                                <option value="KI">Kalsarikännit Instructor</option>
+                            </datalist> <!--Ambos inputs são em forma de lista porém a diferença entre o primeiro exemplo e o segundo é que no segundo você consegue digitar e no primeiro você só pode selecionar-->
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="fieldset3">
+                    <div>
+                        <label for="ilogin">Username</label>
+                        <input type="text" placeholder="Peanut Rāyu" required title="Choose a username" class="txtbox">
+                    </div>
+                    <div>
+                        <label for="ipassword">Choose a Password for 太特地区 *</label>
+                        <input type="password" name="password" id="ipassword"     pattern="^(?=.*[A-Z])(?=(?:.*\d.*\d)).+$"
+                        title="Password must include at least one uppercase letter and two numbers." placeholder="********" class="txtbox">
+                    </div>
+                    <input type="submit" value="Submit" class="buttom">
+                    <input type="reset" value="Reset" class="buttom">
+                </fieldset>
+            
+            </form>
+        </div>
+    </main>
+    <footer>
+        Page developed by <strong><span>BrennaPW</span></strong>
+    </footer>
+</body>
+</html>
