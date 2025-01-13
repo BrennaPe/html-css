@@ -1,0 +1,36 @@
+/* Estilos para Impressão */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+main p{
+    text-align: justify;
+    width: 100%;
+}
+
+span{
+    font-weight: 600;
+    color: red;
+    text-decoration: underline;
+}
+
+article::after{
+    content: "Texto criado apenas para aparecer para QUANDO VOCÊ ESTIVER IMPRIMINDO A PÁGINA !!!!!!!!!!!!!!!!!!!!!!!!!!!!! EXEMPLO";
+}
+

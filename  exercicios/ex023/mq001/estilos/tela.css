@@ -1,0 +1,37 @@
+/* Estilo para Telas */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(32, 102, 140);
+    color: white;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 16px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    padding: 8px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+main h2{
+    padding: 16px 16px 16px 0px;
+}
+
+main{
+    max-width: 700px;
+    margin: auto;
+    text-indent: 18px;
+    text-align: justify;
+}
