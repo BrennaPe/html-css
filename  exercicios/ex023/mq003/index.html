@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+    <p>Media query é = media type + media features.</p>
+    <p>media type é o tipo de midia. Os media types especificam o tipo geral de mídia ou dispositivo no qual o conteúdo será renderizado. Eles são usados para determinar em qual ambiente a media query se aplica, como uma tela, impressora, entre outros.
+    </p>
+    <!--Principais media types:
+	•	all: Aplica-se a todos os dispositivos (padrão, usado se nenhum tipo for especificado).
+	•	print: Para documentos exibidos em dispositivos de impressão ou para visualização de impressão.
+	•	screen: Para telas de dispositivos como desktops, tablets e smartphones.
+	•	speech: Para sintetizadores de voz (leitura em voz alta do conteúdo).-->
+    <p>As media features verificam características específicas do dispositivo ou do ambiente. Elas permitem definir condições mais detalhadas, como largura da tela, altura da viewport, orientação, resolução, entre outros.</p> 
+    <!--Exemplos de media features comuns:
+	•	width e height: A largura e altura da viewport ou área visível.
+	•	min-width e max-width: Largura mínima ou máxima da viewport.
+	•	orientation: A orientação do dispositivo, como portrait (retrato) ou landscape (paisagem).
+	•	resolution: Resolução do dispositivo, como em DPI (dots per inch).
+-->
+    <!--Uso combinado	Usado no início da media query para definir o contexto.	Usado dentro da query para definir condições. Segue o exemplo a seguir onde a media type é o que está fora dos parênteses e o media features é o que está dentro dos parênteses
+    
+    @media screen and (min-width: 1024px) {
+    body {
+    font-size: 18px;
+  }
+    }-->
+
+</body>
+</html>
