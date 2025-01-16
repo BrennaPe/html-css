@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin: 16px;
+}
+
+p{
+    margin: 18px;
+    text-indent: 18px;
+}
+
+@media screen and (min-width: 431px) and (max-height: 931px) {
+    body{
+        background-color: rgb(144, 96, 7);
+        color: rgba(255, 255, 255, 0.789);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+    }
+}
+
+/* min-width significa que a tela tem que ter no mínimo X tamanho em pixels (neste exemplo em específico estamos utilizando pixels). Por exemplo se colocarmos um min-width de 600px se deixarmos a página com 599px as alterações não se aplicarão uma vez que precisa ter no mínimo 600px. */
+/* Já com o max-width é até o máximo X px. por exemplo max-width:900px se a sua página tiver 901 as alterações não se aplicam pois a página está maior que o máximo */

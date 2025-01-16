@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* MEDIA QUERIES PARA TELEFONE */
+
+@media screen and (min-width: 430px) and (max-height: 1000px) {
+    body{
+        background-image: url(../imagens/back-phone.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: rgb(74, 54, 91);
+
+    }    
+
+    .container{
+        background-color: rgba(255, 255, 255, 0.552);
+        width: 90%;
+        height: 95%;
+        margin: auto;
+        margin: 24px;
+        padding: 14px;
+        border-radius: 18px;
+    }
+
+    #desktop{display: none;}
+    #print{ display: none;}
+    #tablet{ display: none;}
+    #tv{ display: none;}
+
+    #phone{
+        display: block; 
+        margin: auto;
+    }
+}
+
+/* MEDIA QUERIES PARA TABLET */
+
+@media screen and (min-width: 601px) {
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: rgb(74, 54, 91);
+    }
+
+    #desktop{display: none;}
+    #print{ display: none;}
+    #tablet{
+        display: block; 
+        margin: auto;
+    }
+    #tv{ display: none;}
+    #phone {display: none;}
+    
+}
+
+/* MEDIA QUERIES PARA DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: rgb(74, 54, 91);
+    }
+
+    #desktop{display: block; 
+        margin: auto;}
+    #print{ display: none;}
+    #tablet{ display: none;}
+    #tv{ display: none;}
+    #phone {display: none;}
+    
+}
