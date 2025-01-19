@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* Todas as demais versões */
+
+/* Pesquisar typical devices break points 
+
+pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet:768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: Acima de1200px
+*/
+
+/* --------------------------------------------------- */
+
+@media print{ /*IMPRESSORAS*/ 
+/* backgrounds não aparecem em impressão então não é importante coloca-los... */
+
+    main{
+        border: 1px solid black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main::after{
+        content: 'Este site foi desenvolvido por BrennaPW';
+        text-decoration: overline;
+    }
+}
+
+/* --------------------------------------------------- */
+
+/* @media screen and (min-width 600px) and (max-width: 768px) NÃO VOU PRECISAR DESSA QUERY UMA VEZ QUE MEU CSS PRINCIPAL JÁ É VOLTADO PARA MOBILE FIRST */
+
+/* --------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 992px) /*TABLETS*/{
+    body{
+        background: url(../imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: block;}
+    img#print{ display: none;}
+    img#pc{ display: none;}
+    img#tv{ display: none;}
+
+}
+
+/* --------------------------------------------------- */
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) /*DESKTOP*/{
+    body{
+        background: url(../imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: block;}
+    img#tv{ display: none;}
+}
+
+/* --------------------------------------------------- */
+
+@media screen and (min-width: 1200px) /*GRANDES TELAS*/ {
+    body{
+        background: url(../imagens/back-tv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    img#phone{ display: none;}
+    img#tablet{ display: none;}
+    img#print{ display: none;}
+    img#pc{ display: none}
+    img#tv{ display: block;}
+
+}
