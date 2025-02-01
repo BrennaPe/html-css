@@ -1,1 +1,136 @@
 /* https://professorguanabara.github.io/projeto-login/ */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", serif;
+
+    background: linear-gradient(0deg, rgba(255,230,130,1) 0%, rgba(255,207,36,1) 100%);
+    display: flex;
+    justify-content: center;  /* main axis uma vez que o flex direction está em row */  
+    align-items: center; /*Cross axis*/
+}
+
+
+
+#container{
+    background-color: white;
+    max-width: 60%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.395);
+}
+
+#imagem{
+    height: 30vh;
+    background: url(imagens/bg-login.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+#content{
+    padding: 14px;
+}
+
+#content h1{
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+#content p{
+    font-size: .8rem;
+    line-height: 1.1rem;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+}
+
+#email-container{
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-left: 10px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: rgba(255,207,36,1);
+
+}
+
+input[type="email"]{
+    padding: 10px;
+    width: 85%;
+    border-radius: 8px;
+    border: 0px transparent;
+    background-color: rgb(142, 179, 183);
+}
+
+input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.761);
+    font-size: 1rem;
+}
+
+
+#senha-container{
+    background-color: rgba(255,207,36,1);
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-left: 10px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-top: 4px;
+
+}
+
+input[type="password"]{
+    padding: 10px;
+    width: 85%;
+    border-radius: 8px;
+    border: 0px transparent;
+    background-color: rgb(142, 179, 183);
+}
+
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.761);
+    font-size: 1rem;
+}
+
+.material-symbols-outlined{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+
+
+
+input[type="submit"], 
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 0px transparent;
+}
+
+input[type="submit"]{
+    background-color: rgb(55, 118, 124);
+    color: white;
+}
+
+input[type="button"]{
+    background-color: transparent;
+    border: 1px solid rgb(55, 118, 124);
+    color: rgb(55, 118, 124);
+}
