@@ -134,3 +134,33 @@ input[type="button"]{
     border: 1px solid rgb(55, 118, 124);
     color: rgb(55, 118, 124);
 }
+
+/* --------------------media queries tablets--------- */
+
+@media screen and (min-width:768px) {
+    #container{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        max-width: 80%;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.395);
+    }
+
+    #imagem{
+        width: 400px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px 0px 0px 20px;
+        height: 18.5rem;
+    }
+
+    .material-symbols-outlined{
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 3rem;
+    }
+
+}
