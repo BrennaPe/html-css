@@ -40,6 +40,14 @@ section#login{
     transition-timing-function: ease;
 }
 
+section#login h1{
+    text-align: center;
+}
+
+section#login > div#formulario p{
+    font-size: .8em;
+}
+
 div#imagem{
     background: var(--bg-phone) url(../imagens/image-login.jpg);
     height: 200px;
