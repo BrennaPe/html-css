@@ -7,7 +7,7 @@
 
 :root {
     --bg-phone:  rgba(238,227,89,1);
-    --bg-gradient: linear-gradient(0deg, rgba(56,143,101,1) 0%, rgba(238,227,89,1) 100%); /* Neste caso vamos usar essa cor como background e não como color uma vez que gradiente não é uma cor e sim um estilo de background*/
+    --bg-gradient: linear-gradient(0deg, rgb(153, 186, 84) 0%, rgba(238,227,89,1) 100%); /* Neste caso vamos usar essa cor como background e não como color uma vez que gradiente não é uma cor e sim um estilo de background*/
     --bg-login: rgb(227, 227, 227);
     --text-color: #212121; 
     --font-primary: 
@@ -27,14 +27,6 @@ main{
     width: 100vw;
 }
 
-div#imagem{
-    background: var(--bg-phone) url(../imagens/image-login.jpg);
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 section#login{
     background-color: var(--bg-login);
     width: 250px;
@@ -43,6 +35,17 @@ section#login{
     color: var(--text-color);
     overflow: hidden; 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#imagem{
+    background: var(--bg-phone) url(../imagens/image-login.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section#login > div#formulario{

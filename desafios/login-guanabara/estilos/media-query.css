@@ -1,0 +1,50 @@
+/*
+Here are the typical device breakpoints:
+	•	Extra small (XS) – up to 480px (mobile phones)
+	•	Small (SM) – 481px to 768px (larger phones & small tablets)
+	•	Medium (MD) – 769px to 1024px (tablets & small laptops)
+	•	Large (LG) – 1025px to 1200px (desktops & large laptops)
+	•	Extra large (XL) – 1201px and above (large screens & TVs)
+*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body, html{
+        background: var(--bg-gradient);
+    }
+    section#login{
+        width: 80vw;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+/* --------------queries para grandes telas--------- */
+
+@media screen and (min-width:1025px) {
+    body, html{
+        background: var(--bg-gradient);
+    }
+
+    section#login{
+        width: 850px;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+}
