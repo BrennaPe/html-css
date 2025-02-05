@@ -26,6 +26,7 @@ main{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    
 }
 
 section#login{
@@ -36,13 +37,14 @@ section#login{
     color: var(--text-color);
     overflow: hidden; 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
-
+    
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
 section#login h1{
     text-align: center;
+    margin-bottom: 7px;
 }
 
 div#imagem{
@@ -53,21 +55,47 @@ div#imagem{
     background-repeat: no-repeat;
 }
 
+div#formulario{
+    padding: 10px;
+}
 
 section#login > div#formulario p{
-    font-size: .8em;
+    font-size: .85em;
+    text-align: justify;
 }
 
 form > div.campo{
     background-color: var(--bg-phone);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 7px 0px;
+}
+
+div.campo > i{
+    color: var(--text-color);
+    /* background-color: black; */
+    font-size: 2rem;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: rgba(168, 206, 85, 0.666);
+    font-size: 1em;
+    border: none;
+    height: 85%;
+    width: calc(100% - 50px); /*IMPORTANTEEEEEEEEE*/
+    padding-left: 5px;
+    border-radius: 8px;
+    transform: translateY(-10px); /*TODA ANIMAÇÃO E TODA TRANSFORMAÇÃO DEVE SER A ULTIMA LINHA DO SEU CÓD PARA NÃO DAR ERRO*/
+
+    /* se colocassemos o width de 100% neste caso ele iria ultrapassar o tamanho uma vez que temos 40px de icone ali. Para conseguirmos 100% do width e discontarmos os 40px já ocupados utilizaremos da ferramenta CALC */
 }
 
 div.campo > label{
     display: none;
 }
+
 
 input[type="submit"]{
     display: block;

@@ -13,6 +13,7 @@ Here are the typical device breakpoints:
     }
     section#login{
         width: 80vw;
+        height: 290px;
     }
 
     section#login > div#imagem{
@@ -42,6 +43,7 @@ Here are the typical device breakpoints:
 
     section#login{
         width: 850px;
+        height: 290px;
     }
     section#login > div#imagem{
         float: right;
