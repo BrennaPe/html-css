@@ -7,8 +7,9 @@
 
 :root {
     --bg-phone:  rgba(238,227,89,1);
+    --bg-button:rgb(153, 186, 84);
     --bg-gradient: linear-gradient(0deg, rgb(153, 186, 84) 0%, rgba(238,227,89,1) 100%); /* Neste caso vamos usar essa cor como background e não como color uma vez que gradiente não é uma cor e sim um estilo de background*/
-    --bg-login: rgb(227, 227, 227);
+    --bg-login: rgb(237, 237, 237);
     --text-color: #212121; 
     --font-primary: 
 }
@@ -44,10 +45,6 @@ section#login h1{
     text-align: center;
 }
 
-section#login > div#formulario p{
-    font-size: .8em;
-}
-
 div#imagem{
     background: var(--bg-phone) url(../imagens/image-login.jpg);
     height: 200px;
@@ -56,7 +53,63 @@ div#imagem{
     background-repeat: no-repeat;
 }
 
-section#login > div#formulario{
-    padding: 10px;
+
+section#login > div#formulario p{
+    font-size: .8em;
 }
 
+form > div.campo{
+    background-color: var(--bg-phone);
+    height: 40px;
+    border-radius: 5px;
+    margin: 7px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--bg-button);
+    border: transparent;
+    color: rgb(108, 130, 59);
+    border: 1px solid rgb(86, 104, 47);
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(86, 104, 47);
+    color: var(--bg-button);
+}
+
+a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(86, 104, 47);
+    border: 1px solid var(--bg-button);
+    color: var(--bg-button);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 7px;
+
+}
+
+a.button > i{
+    font-size: 0.8rem;
+}
+
+a.button:hover{
+    background-color: var(--bg-button);
+    color: rgb(86, 104, 47);
+}

@@ -20,7 +20,7 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a). faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.php" method="post">
-
+                    <div class="campo">
                     <i class="material-icons">person</i>
 
                         <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
@@ -30,11 +30,15 @@
                     <div class="campo">
                         <i class="material-icons">vpn_key</i>
                         <input type="password" name="password" id="ipassword" autocomplete="current-password" required minlength="4" maxlength="12">
+
                         <label for="ipassword">Senha</label>
                     </div>
                     <input type="submit" value="Enviar">
-                    <a href="esqueci.html">Easqueci a senha                     <i class="material-icons">mail</i>  </a>
+                    <a href="esqueci.html" class="button">Esqueci a senha
+                    <i class="material-icons">mail<i>  
+                    </a>
                 </form>
+
             </div>
         </section>
     </main>
