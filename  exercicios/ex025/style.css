@@ -1,0 +1,57 @@
+#app{
+    display: grid;
+}
+
+#app > div{
+    border: 1px solid blue;
+}
+
+#app span{
+    border: 1px solid red;
+}
+/* ----------------------------------- */
+
+#app2{
+    display: inline-grid;
+}
+
+#app2 div{
+    border: 1px solid gray;
+}
+
+#app2 span{
+    border: 1px solid rgb(68, 224, 238);
+    /* margin-top: 10px; */
+}
+
+/* ----------------------------------- */
+#app3{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+}
+
+
+
+/* com o grid tamplate columns eu posso modificar o tamplate dos meu itens para que eles apareçam em quantas colunas eu quiser e no tamanho que eu quiser. Posso definir esse tamanho em px mas para tornar ele flexével é recomendado usar fração ou unidades flexiveis. Neste exemplo estarei deixando eles em três colunas cada uma com 1fr ou seja com tamanhos iguais  */
+#app3 > div{
+    border: 1px solid blue;
+}
+
+#app3 span{
+    border: 1px solid red;
+}
+
+/* --------------------------------------------- */
+
+#app4{
+    display: grid;
+    grid-template-rows: 30px 6em 5fr;
+}
+
+#app4 > div{
+    border: 1px solid blue;
+}
+
+#app4 span{
+    border: 1px solid red;
+}

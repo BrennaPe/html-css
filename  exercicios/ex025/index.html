@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Todo grid é composto por 2 principais grupos sendo eles o container: pai (elemento que contem os itens filhos) e itens: o(s) filhos.-->
+    <div id="app">
+        <div>1</div>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <p>Perceba que os itens 2 e 3 são elementos inline uma vez que são tags span mas como você pode ver eles estão displayeds como se fossem block agora. Isso ocorre pq estão sob efeito do grid que esta no seu elemnto pai.</p>
+
+    <div id="app2">
+        <div>1</div>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <p>Já neste outro exemplo no container pai estamos utilizando o inline grid. A primeiro momento você pode pensar que todos os elementos viraram inline uma vez que o border só esta ocupando a largura do elemento mas não se engane, quando um elemento é in line ele fica um ao lado do outro e não cada um em uma row diferente. E alem do mais você neste caso consegue aplicar margin nos elemntos inline coisa que não é possivel fazer quando os inlines não 'puros' ou seja quando eles não estão sob efeito do display grid. O elemnto container pai vai receber o a propeidade display grid e isso vai mudar o comportamento dos filhos.</p>
+    <h2>GRID TAMPLATE COLUMNS container pai</h2>
+    <div id="app3">
+        <div>1</div>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <p>Neste comando estou falando que quero 3 colunas e cada coluna deve ocupar igualmente 1 fração do estaço de tela.</p>
+
+    <h2>TAMPLATE ROWS container pai</h2>
+    <div id="app4">
+        <div>1</div>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <p>Neste caso como não definimos o tamanho do nosso container pai e estamos falando de height (height se ajusta conforme vai se colocando conteudo na página caso ela não seja pre determinada) o browser vai fazer um calculo e tentar definir o tamanho que você pediu alí. Neste caso a fração não funcionou (ficou do mesmo tamanho original) porque não tem um height de referencia de tamanho</p>
+
+    <h2><a href="grid.html" target="_blank">Tamplate columns and rows container pai</a></h2>
+    <h2><a href="itens.html" target="_blank">Columns and rowns itens (grid column nos itens) </a></h2>
+    <h2><a href="itens2.html" target="_blank">Columns and rowns itens (grid row column nos itens) </a></h2>
+    <h2><a href="itens3.html" target="_blank">GRID tamplate area </a></h2>
+    <h2><a href="gap.html" target="_blank">Gap </a></h2>
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    border: 4px solid red;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "A B B"
+    "A B B"
+    "A C D";
+}
+
+#app *{
+    border: 1px solid grey;
+}
+
+#app header{
+    grid-area: A;
+}
+#app main{
+    grid-area: B;
+}

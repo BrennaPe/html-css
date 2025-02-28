@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    border: 2px solid red;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 10% 80% 10%);
+}
+
+#app div:nth-child(1){
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#app div:nth-child(2){
+    border: 1px solid black;
+    grid-column: 1/3; /*Short hard para grid start and grid end*/
+}
+
+#app div:nth-child(3){
+    border: 1px solid black;
+}
+
+#app div:nth-child(4){
+    border: 1px solid black;
+    grid-column: 1/4;
+}

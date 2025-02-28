@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#app{
+    display: grid;
+    grid-template: 
+    "A B B" 100px
+    "A B B" 50px
+    "A C D" 150px / 2fr 3fr 5fr; 
+    gap: 10px;
+} /*Neste cASO A PRIMEIRA PROPRIEDADE É A AREA E A SEGUNDA O ROWS e tudo depois da barra / é a propriedade colunms*/
+
+header{
+    grid-area: A;
+}
+
+main{
+    grid-area: B;
+}
+
+aside{
+    grid-area: C;
+}
+
+footer{
+    grid-area: D;
+}
