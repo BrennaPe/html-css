@@ -27,3 +27,17 @@ body{
     color: var(--text-color-primary);
     font: var(--text);
 }
+
+h1,h2,h3{
+    font: inherit;
+}
+
+/*Utility-first*/
+
+.grid{
+    display: grid;
+}
+
+.grid-flow-column{
+    grid-auto-flow: column;
+}
