@@ -3,3 +3,223 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --color1:#071538;
+    --color2:#095795;
+    --color3:#602f14;
+    --color4:#b85a27;
+    --color-font:#ffffffa1;
+    --font-family: "Roboto", sans-serif;
+    --h1: 800 24px/135% var(--font-family);
+    --text: 400 16px/150% var(--font-family);    
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+
+body{
+    background-image: url(image-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------------HEADER----------------- */
+
+header{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    color: var(--color4);
+}
+
+header #logo h1{
+    font-weight: 900;
+    text-shadow: 2px 2px 8px black;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+nav ul li a:hover{
+    color: var(--color4);
+}
+
+header form input{
+    background-color: transparent;
+    border: 1px solid var(--color4);
+    height: 28px;
+    width: 200px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+header form button{
+    height: 28px;
+    width: 60px;
+    font: var(--font-family);
+    font-size: 12px;
+    background-color: var(--color4);
+    border: 0px;
+    color: var(--color-font);
+    font-weight: 600;
+    border-radius: 0px 5px 5px 0px;
+}
+
+header form ::placeholder{
+    color: var(--color-font);
+    padding: 10px;
+}
+
+/* --------------------MAIN----------------- */
+
+main{
+    display: flex;
+    align-items: center;
+    height: 92%;
+    /* border: 2px solid rgb(32, 7, 255); */
+
+}
+
+/* --------------------TEXT-SIDE---------------- */
+
+main #text-side{
+    /* border: 2px solid red; */
+    width: 450px;
+    padding-inline: 24px;
+}
+
+
+#text-side h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--color-font);
+    text-shadow: 2px 2px 5px black;
+
+
+    span{
+        color: var(--color4);
+    }
+}
+
+#text-side p{
+    color: var(--color-font);
+    text-shadow: 2px 2px 5px black;
+    line-height: 24px;
+    margin-block: 14px;
+}
+
+#text-side a{
+    text-decoration: none;
+    color: var(--color-font);
+    background-color: var(--color4);
+    border-radius: 5px;
+    padding: 12px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+#text-side a:hover{
+    color: white;
+}
+
+/* ------------------FORMS SIDE----------------- */
+
+main #login-side{
+    background-color: var(--color3);
+    width: 380px;
+    color: var(--color-font);
+    border-radius: 8px;
+}
+
+#content{
+    padding: 24px 32px;
+}
+
+#login-side a{
+    text-decoration: none;
+    color: var(--color-font);
+    background-color: var(--color4);
+    padding: 14px;
+    display: flex;
+    border-radius: 8px;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+#login-side a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#login-side label{
+    display: none;
+}
+
+#login-side input[type="email"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-font);
+    width: 100%;
+    height: 24px;
+    margin-bottom: 14px;
+
+}
+
+#login-side form ::placeholder{
+    font: var(--font-family);    
+    font-size: 12px;
+}
+
+#login-side input[type="password"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-font);
+    width: 100%;
+    height: 24px;
+    margin-bottom: 14px;
+}
+
+#login-side form button{
+    background-color: var(--color-font);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 42px;
+    color: var(--color4);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+#login-side p{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#login-side p span{
+    color: var(--color4);
+}
+
+#login-side p:nth-of-type(2) {
+    color: var(--color-font);
+    font-size: 12px;
+}
+/* nth-of-type(2): Selects the second <p> tag inside #login-side, no matter what other elements exist. */

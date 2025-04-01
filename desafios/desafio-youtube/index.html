@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Designe</title>
+    <title>Web Designe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+    <header>
+
+        <div id="logo">
+            <h1>Candlelight</h1>
+        </div>
+
+        <nav id="navegation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form action="search-results.html" method="GET" id="search">
+            <input type="text" name="search" placeholder="Type to Search" required>
+            <button type="submit">Search</button>
+        </form>
+
+    </header>
+
+    <main>
+        <div id="text-side">
+            <h1>Web designe & <br/> <span>Developmenet</span> <br/> Course
+            </h1>
+
+            <p>Web Design is a specialisation of the design stream. They also use HTML, CSS, WYSIWYG editing, mark up validators etc., to create a design elements</p>
+            <a href="#">Join us</a>
+        </div>
+
+        <div id="login-side">
+            <div id="content">
+                <a href="#">Login Here</a>
+                <form action="login.html" method="get" id="login">
+                    <div>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Enter Email Here">
+                    <div>
+                    <div>
+                        <label for="ipassword">Password
+                        </label>
+                        <input type="password" name="password" id="ipassword" placeholder="Enter your Password Here" pattern="^(?=.*[A-Z])(?=(?:.*\d.*\d)).+$"
+                        title="Password must include at least one uppercase letter and two numbers.">
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <br/>
+                <span>Sign up</span> here</p>
+                <p>Log in with</p>
+                        </div>
+            <div id="icons">
+                <ion-icon name="accessibility-outline"></ion-icon>
+                <ion-icon name="alarm-outline"></ion-icon>
+        </div>
+    </main>
     
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
