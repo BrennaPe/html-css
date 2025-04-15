@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <p>GET ELEMENT BY TAG</p>
+    <div>Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[0]
+        //Aqui estamos selecionando a tag p da nossa página. Perceba que temos duas tags p então para selecionar apenas a que queremos, que neste caso é a primeira, precisamos especificar isso. Essa especificação se dá pelo [0] 0 é o primeiro paragrafo que aparecer. Para selecionar o segundo paragrafo seria [2]. Perceba que a tag se chama get ELEMENTS no plutal. Sempre que estiver no plutal nos precisaremos utilizar o colchetes e especifical qual elementos estamos nos referindo.
+        window.document.write("Está escrito assim = " + p1.innerText)
+    </script>
+</body>
+</html>

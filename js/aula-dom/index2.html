@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <p>Get element by ID</p>
+    <div id="msg" >Clique em mim</div>
+
+    <script>
+        var d = window.document.getElementById("msg") 
+        //Aqui estamos selecionando o elemento que queremos através da id. Mas o mais recomendado é o por query selector como no exemplo abaixo que também é por id mas utilizando outro método. Quando é id utilizamos "#" quando é class utilizamoos ".". Ou seja, no query selector nós fazemos assim como é as regras do css. 
+
+        var d = window.document.querySelector("div#msg")
+    </script>
+</body>
+</html>

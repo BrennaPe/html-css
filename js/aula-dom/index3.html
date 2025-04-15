@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        div#area{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Todos os codigos são disparados automaticamente (html e css) mas isso não acontece quando estamos colocando efeitos/funções/eventos em algo especifico. Os eventos são "coisas" que você pode fazer com o seu elemento. Esses eventos ocorrem por exemplo quando você clicar no item. O bloco {} de funções só será disparado ao interagirmos com ela-->
+
+    <div id="area" onclick="clicar()">
+        interaja <!--on click-->
+    </div>
+
+    <script>
+        function clicar() {
+            var teste = window.document.getElementById("area")
+            teste.innerText = ("AEOW!!!")
+        }
+        //  QUando eu clicar na minha div onclick="clicar()" eu vou criar um objeto chamado teste (esse nome eu quem dei aleatoriamente). O window.document.getElementById("area") Faz a ligação do objeto area com o elemento de id area e e esse objeto ( teste.innerText = ("AEOW!!!")) vai mudar o conteudo dele para aeeow  e isso só ocorrerá quando você CLICAR no elemento que possui esse bloco de comandos ou seja ele só é disparado e executando quando a uma ação.
+    </script>
+</body>
+</html>
