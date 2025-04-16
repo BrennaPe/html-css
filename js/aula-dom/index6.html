@@ -3,27 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subtraindo valores</title>
+    <title>Subtração</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#container{
+            background-color: rgba(255, 255, 255, 0.415);
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 
+            0px 0px 5px white,
+            0px 0px 15px white,
+            0px 0px 25px white,
+            0px 0px 95px white;
+        }
+
+        p#result{
+            border-bottom: 1px solid white;
+        }
+
+        div#inputs input{
+            background-color: rgba(255, 255, 255, 0.491);
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            color: rgba(0, 0, 0, 0.644);
+            font-weight: 600;
+        }
+
+        input[type="button"]{
+            height: 30px;
+            width: 150px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.644);
+        }
+    </style>
 </head>
 <body>
-    <h1>Subtraindo Valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Subtrair" onclick="sub()">
-    <div id="result">Resultado</div>
+    <div id="container">
+        <h1>Subtração</h1>
+        <div id="inputs">
+            <input type="number" name="txtn1" id="txtn1"> -
+            <input type="number" name="txtn2" id="txtn2">
+        </div>
+        <input type="button" value="calcular" onclick="calc()">
+        <p id="result"></p>
+
+    </div>
 
     <script>
-        function sub(){
-
+        function calc(){
             var tn1 = window.document.getElementById("txtn1")
             var tn2 = window.document.getElementById("txtn2")
-            var res = window.document.getElementById("result")
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1-n2
-            res.a
-
+             var res = window.document.getElementById("result")
+             var n1 = Number(tn1.value)
+             var n2 = Number(tn2.value)
+             var s = n1 - n2
+             res.innerHTML = `O resultado da subtração entre ${n1} e ${n2} é <strong>${s}</strong>`
         }
+
     </script>
 </body>
 </html>
