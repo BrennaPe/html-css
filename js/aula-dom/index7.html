@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="">Velocidade do carro</label>
+    <input type="number" name="veln" id="veln"> <span>KM/H</span>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <p id="result"></p>
+    <script>
+        function calcular(){
+            var vel = window.document.getElementById("veln")
+            var v = Number(vel.value)
+            var res = window.document.getElementById("result")
+            if (v > 60) {res.innerText = `A sua valocidade é de ${v} KM/H, isto é a cima do máximo permitido. Você está MULTADO`}
+            else {res.innerText = `A sua velocidade é de ${v}KM/H, e está dentro do máximo permitido. Obrigada`}
+        }
+    </script>
+</body>
+</html>
