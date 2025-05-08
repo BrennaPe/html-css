@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Verifique se vocês foi multado</h1>
+        <label for="velocidade">Qual era a sua velocidade?</label>
+        <input type="number" id="velocidade" placeholder="Digite a velocidade">
+        <button id="verificar" onclick="velocid()">Verificar</button>
+        <p id="resultado"></p>
+
+        <script>
+            function velocid(){
+                let vel = document.getElementById("velocidade");
+                let result = document.getElementById("resultado");
+                let v = Number(vel.value);
+                if (v <= 80){
+                    result.innerHTML = `A sua velocidade era de ${v}km/h. E essa velocidade está dentro do máximo permitido.`}
+                    else {
+                        result.innerHTML = `Você está <strong>${v - 80}km/h</strong> acima do limite permitido. Você foi multado!`;}
+            }
+        </script>
+    </main>
+</body>
+</html>
